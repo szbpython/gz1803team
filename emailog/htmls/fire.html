@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="http://127.0.0.1:8000/day08/csrf" method="post">
+    {%csrf_token%}
+    <input type="hidden" name="u_name" value="dada">
+    <br>
+    <input type="hidden" name="num" value="100000000">
+    <br>
+    <input type="submit" value="你可爱不">
+</form>
+
+</body>
+</html>
